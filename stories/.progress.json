@@ -1,0 +1,5 @@
+{
+  "tanxinji":  { "next": 1, "total": 10, "done": [], "slug_prefix": "01-tanxinji",  "outline": "stories/outlines/01-tanxinji-outline.md" },
+  "archive":   { "next": 1, "total": 20, "done": [], "slug_prefix": "02-archive",   "outline": "stories/outlines/02-archive-outline.md" },
+  "xusheng":   { "next": 1, "total": 15, "done": [], "slug_prefix": "03-xusheng",   "outline": "stories/outlines/03-xusheng-outline.md" }
+}
