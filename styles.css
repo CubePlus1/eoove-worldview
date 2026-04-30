@@ -594,15 +594,15 @@ blockquote strong {
 }
 
 .era-card[data-era="1"]::before {
-  background-image: url("images/era-1-tanxinji.png"),
+  background-image: url("images/era-1-tanxinji.webp"),
     linear-gradient(135deg, rgba(244,196,92,.18), rgba(255,93,177,.12));
 }
 .era-card[data-era="2"]::before {
-  background-image: url("images/era-2-archive.png"),
+  background-image: url("images/era-2-archive.webp"),
     linear-gradient(135deg, rgba(93,200,255,.20), rgba(207,214,232,.10));
 }
 .era-card[data-era="3"]::before {
-  background-image: url("images/era-3-xusheng.png"),
+  background-image: url("images/era-3-xusheng.webp"),
     linear-gradient(135deg, rgba(255,93,177,.18), rgba(93,200,255,.18));
 }
 

@@ -29,12 +29,12 @@ EOOVE 是一个原创远未来科幻世界观，核心命题为 **0 与 1 的对
 │   ├── ...
 │   └── 30-future.html
 └── images/                 # 视觉资产
-    ├── hero-morina.png
-    ├── era-1-tanxinji.png
-    ├── era-2-archive.png
-    ├── era-3-xusheng.png
-    ├── morina-portrait.png
-    └── death-protocol.png
+    ├── hero-morina.webp
+    ├── era-1-tanxinji.webp
+    ├── era-2-archive.webp
+    ├── era-3-xusheng.webp
+    ├── morina-portrait.webp
+    └── death-protocol.webp
 ```
 
 ## 💻 本地运行
