@@ -1,5 +1,5 @@
 {
-  "tanxinji":  { "next": 8, "total": 10, "done": [1,2,3,4,5,6,7], "slug_prefix": "01-tanxinji",  "outline": "stories/outlines/01-tanxinji-outline.md" },
-  "archive":   { "next": 8, "total": 20, "done": [1,2,3,4,5,6,7], "slug_prefix": "02-archive",   "outline": "stories/outlines/02-archive-outline.md" },
-  "xusheng":   { "next": 8, "total": 15, "done": [1,2,3,4,5,6,7], "slug_prefix": "03-xusheng",   "outline": "stories/outlines/03-xusheng-outline.md" }
+  "tanxinji":  { "next": 9, "total": 10, "done": [1,2,3,4,5,6,7,8], "slug_prefix": "01-tanxinji",  "outline": "stories/outlines/01-tanxinji-outline.md" },
+  "archive":   { "next": 9, "total": 20, "done": [1,2,3,4,5,6,7,8], "slug_prefix": "02-archive",   "outline": "stories/outlines/02-archive-outline.md" },
+  "xusheng":   { "next": 9, "total": 15, "done": [1,2,3,4,5,6,7,8], "slug_prefix": "03-xusheng",   "outline": "stories/outlines/03-xusheng-outline.md" }
 }
