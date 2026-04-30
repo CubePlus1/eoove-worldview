@@ -61,6 +61,9 @@ const PAGES = [
   { md: "31_角色档案.md",                  slug: "31-characters",        num: "31",     title: "角色档案",                brief: "撑起三纪骨架的奇点、探心纪私人执念者、归档纪元见证者、续生纪元代表。", kind: "appendix" },
   { md: "32_时代年表附录.md",              slug: "32-timeline",          num: "32",     title: "时代年表附录",            brief: "BY/AY/SY 三套纪年体系下的精细年表，含每纪私人时刻索引。", kind: "appendix" },
   { md: "33_术语词典.md",                  slug: "33-glossary",          num: "33",     title: "术语词典",                brief: "九大类术语的可索引词典：元概念 / 角色 / 机构 / 技术 / 地点 / 事件 / 口语 / 法律 / 纪年。", kind: "appendix" },
+  { md: "34_续生判例集.md",                slug: "34-case-law",          num: "34",     title: "续生判例集",              brief: "慢明协议委员会 8 个里程碑判例：从伊莱恩案到 X-2 案，从林家不删除区到归零潮逆向续生。", kind: "appendix" },
+  { md: "35_续生者口述史.md",              slug: "35-oral-history",      num: "35",     title: "续生者口述史",            brief: "8 段无名续生者的第一人称口述。差异承认的不同姿态、不同等级、不同纪元入档时间。", kind: "appendix" },
+  { md: "36_白页天使审判记录.md",          slug: "36-white-page",        num: "36",     title: "白页天使审判记录",        brief: "续生纪元 5 次白页天使主动介入的客观记录。0 也在缓慢学习共存。", kind: "appendix" },
 ];
 
 /* ------------------------------------------------------------------ */
@@ -400,7 +403,7 @@ ${tocHtml(headings)}
 
   <footer class="site-footer">
     <p class="site-footer__quote"><em>"EOOVE 不是一个完美的世界。它只是文明在死亡命题面前，第一次拒绝草率作答的尝试。"</em></p>
-    <p class="site-footer__meta">${page.kind === "appendix" ? "APPENDIX" : "DIMENSION"} ${page.num} · ${page.slug.toUpperCase()} · v1.1</p>
+    <p class="site-footer__meta">${page.kind === "appendix" ? "APPENDIX" : "DIMENSION"} ${page.num} · ${page.slug.toUpperCase()} · v1.2</p>
   </footer>
 
 </div>
