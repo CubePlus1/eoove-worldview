@@ -981,6 +981,98 @@ blockquote strong {
   text-align: justify;
 }
 
+/* ---------- 12.5  附录速查（Appendix v1.1） ---------- */
+.appendix-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  margin-top: 12px;
+}
+
+.appendix-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-surface);
+  color: var(--fg-primary);
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+
+.appendix-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-blue);
+  box-shadow: var(--shadow-glow-blue);
+}
+
+.appendix-card__media {
+  height: 168px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+}
+
+.appendix-card__media::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(6,8,13,0) 30%, rgba(6,8,13,.85) 100%);
+  pointer-events: none;
+}
+
+.appendix-card__body {
+  padding: 18px 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.appendix-card__kicker {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .3em;
+  color: var(--accent-pink);
+  margin: 0;
+}
+
+.appendix-card__title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  margin: 0;
+  color: var(--fg-primary);
+}
+
+.appendix-card__brief {
+  font-size: 13.5px;
+  line-height: 1.78;
+  color: var(--fg-secondary);
+  text-align: justify;
+  margin: 4px 0 0;
+}
+
+.appendix-card__meta {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: .08em;
+  color: var(--accent-blue);
+  margin: 6px 0 0;
+  border-top: 1px dashed var(--border);
+  padding-top: 10px;
+}
+
+.appendix-foot {
+  margin-top: 28px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--fg-secondary);
+  letter-spacing: .04em;
+}
+
 /* ---------- 13. 维度页（content article）---------- */
 .page-hero {
   position: relative;

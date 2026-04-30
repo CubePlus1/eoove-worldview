@@ -58,6 +58,9 @@ const PAGES = [
   { md: "28_语言文字.md",                  slug: "28-language",          num: "28",     title: "语言文字",                brief: "二进制书写法兴起；许多概念以「0/1」对偶语法表达。" },
   { md: "29_日常生活.md",                  slug: "29-daily-life",        num: "29",     title: "日常生活",                brief: "早晨向归档塔致意，夜晚向亡者残响道安——成为文明仪式。" },
   { md: "30_未来走向.md",                  slug: "30-future",            num: "30",     title: "未来走向",                brief: "慢明协议之后，文明开始学习与「边界守门者」共存。" },
+  { md: "31_角色档案.md",                  slug: "31-characters",        num: "31",     title: "角色档案",                brief: "撑起三纪骨架的奇点、探心纪私人执念者、归档纪元见证者、续生纪元代表。", kind: "appendix" },
+  { md: "32_时代年表附录.md",              slug: "32-timeline",          num: "32",     title: "时代年表附录",            brief: "BY/AY/SY 三套纪年体系下的精细年表，含每纪私人时刻索引。", kind: "appendix" },
+  { md: "33_术语词典.md",                  slug: "33-glossary",          num: "33",     title: "术语词典",                brief: "九大类术语的可索引词典：元概念 / 角色 / 机构 / 技术 / 地点 / 事件 / 口语 / 法律 / 纪年。", kind: "appendix" },
 ];
 
 /* ------------------------------------------------------------------ */
@@ -360,12 +363,13 @@ a{color:#5dc8ff;text-decoration:none;}
       <a href="../index.html#eras">三纪</a>
       <a href="../index.html#duality">双生</a>
       <a href="../index.html#dimensions">32 维度</a>
+      <a href="../index.html#appendix">附录</a>
     </nav>
   </header>
 
   <section class="page-hero">
     <div class="page-hero__inner">
-      <p class="page-hero__num">DIMENSION · ${page.num}</p>
+      <p class="page-hero__num">${page.kind === "appendix" ? "APPENDIX" : "DIMENSION"} · ${page.num}</p>
       <h1 class="page-hero__title">${page.title}</h1>
       <p class="page-hero__brief">${escapeHtml(page.brief)}</p>
       <nav class="page-hero__nav" aria-label="章节导航">
@@ -396,7 +400,7 @@ ${tocHtml(headings)}
 
   <footer class="site-footer">
     <p class="site-footer__quote"><em>"EOOVE 不是一个完美的世界。它只是文明在死亡命题面前，第一次拒绝草率作答的尝试。"</em></p>
-    <p class="site-footer__meta">DIMENSION ${page.num} · ${page.slug.toUpperCase()} · v1.0</p>
+    <p class="site-footer__meta">${page.kind === "appendix" ? "APPENDIX" : "DIMENSION"} ${page.num} · ${page.slug.toUpperCase()} · v1.1</p>
   </footer>
 
 </div>
