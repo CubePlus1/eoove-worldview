@@ -53,7 +53,9 @@
       "title": "签字报告",
       "logline": "江漪取名之夜签字撤名的那份内部报告。试图销毁失败（光束自动复制），最终归 Morina 收藏，对所有访问申请永久挂「待审」。",
       "era_span": "归档纪元 → 续生纪元",
-      "status": "pending"
+      "status": "done",
+      "completed_at": "2026-05-02",
+      "wc": 3868
     },
     {
       "slug": "anyuan-diary",
