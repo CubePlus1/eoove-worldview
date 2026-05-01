@@ -26,7 +26,9 @@
       "title": "圆珠笔",
       "logline": "钟楼最后一夜林老从内袋摸出又放回的那支笔。林老身后被山下小店主收存。续生纪元江漪后人捐入零号塔。",
       "era_span": "探心纪 → 续生纪元",
-      "status": "pending"
+      "status": "done",
+      "completed_at": "2026-05-02",
+      "wc": 3943
     },
     {
       "slug": "chenyi-book",
