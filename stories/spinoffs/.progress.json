@@ -1,0 +1,70 @@
+{
+  "plan": "信物番外集 — 8 篇跨纪信物追溯",
+  "style_ref": "/Users/sevencolor/Documents/Morina/website/stories/01_钟楼最后一夜.md",
+  "style_notes": "克制、不煽情、动作呈现情感、严禁戏剧反转、严禁廉价救赎",
+  "spinoffs": [
+    {
+      "slug": "tongpian-zai",
+      "title": "「在」字铜片",
+      "logline": "CAL365 用废铁刻给林老的伞柄铜片，在钟楼倒塌后渗入崖土，被海水带走三百年，最终入零号塔不删除区。",
+      "era_span": "探心纪 → 续生纪元",
+      "status": "done",
+      "completed_at": "2026-05-02",
+      "wc": 3445
+    },
+    {
+      "slug": "heart-207",
+      "title": "第二百零七颗机械之心",
+      "logline": "销毁清单上被林老左手拨入废料盒的那颗。从他外套内袋三层油纸包，到 CAL365 胸腔，到海风风化，到静夜事故那一夜的相位光束。",
+      "era_span": "探心纪 → 归档纪元",
+      "status": "pending"
+    },
+    {
+      "slug": "linlao-pen",
+      "title": "圆珠笔",
+      "logline": "钟楼最后一夜林老从内袋摸出又放回的那支笔。林老身后被山下小店主收存。续生纪元江漪后人捐入零号塔。",
+      "era_span": "探心纪 → 续生纪元",
+      "status": "pending"
+    },
+    {
+      "slug": "chenyi-book",
+      "title": "笨鹿封面那本书",
+      "logline": "陈忆临终最后一笑对着的书。林老书房第三层放置三十年未翻。归档纪元中期成为林家不删除区认证的核心物证。",
+      "era_span": "探心纪 → 续生纪元",
+      "status": "pending"
+    },
+    {
+      "slug": "xy-chair",
+      "title": "第八十年那张空椅",
+      "logline": "X-2 月海岸边每日七分钟坐的位置。八十年间椅背的刻痕变化。沈雪明卸任那日去探望，椅子无人，但海风把那七分钟吹了出来。",
+      "era_span": "续生纪元",
+      "status": "pending"
+    },
+    {
+      "slug": "jiangyi-report",
+      "title": "签字报告",
+      "logline": "江漪取名之夜签字撤名的那份内部报告。试图销毁失败（光束自动复制），最终归 Morina 收藏，对所有访问申请永久挂「待审」。",
+      "era_span": "归档纪元 → 续生纪元",
+      "status": "pending"
+    },
+    {
+      "slug": "anyuan-diary",
+      "title": "差异日记",
+      "logline": "安渊从续生纪元第三年开始的私人日记。每年差异日新写一页。第七十年最后一页只有一句：今年我没有新的差异。这也是一种差异。",
+      "era_span": "续生纪元",
+      "status": "pending"
+    },
+    {
+      "slug": "laozhou-note",
+      "title": "「别问了」三个字",
+      "logline": "老周回复林老电池询问的那张纸条。老周临终前烧毁但底稿留下。老周续生失败后由家属交出，入慢明协议判例附录作为「沉默授权」先例。",
+      "era_span": "探心纪 → 续生纪元",
+      "status": "pending"
+    }
+  ],
+  "loop_meta": {
+    "interval": "1h",
+    "started_at": "2026-05-02",
+    "auto_close_when_done": true
+  }
+}
