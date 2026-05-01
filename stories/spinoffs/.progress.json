@@ -62,7 +62,9 @@
       "title": "差异日记",
       "logline": "安渊从续生纪元第三年开始的私人日记。每年差异日新写一页。第七十年最后一页只有一句：今年我没有新的差异。这也是一种差异。",
       "era_span": "续生纪元",
-      "status": "pending"
+      "status": "done",
+      "completed_at": "2026-05-02",
+      "wc": 4714
     },
     {
       "slug": "laozhou-note",
