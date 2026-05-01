@@ -107,6 +107,11 @@ function inline(text) {
 
   text = escapeHtml(text);
 
+  // 图片 ![alt](url) — 必须在链接之前匹配
+  text = text.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_, alt, url) => {
+    return `<img class="char-portrait" src="${url}" alt="${alt}" loading="lazy">`;
+  });
+
   // 链接 [text](url)
   text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, url) => {
     return `<a href="${url}">${label}</a>`;

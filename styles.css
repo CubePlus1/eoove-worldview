@@ -96,6 +96,35 @@ img {
   height: auto;
 }
 
+/* 角色档案 portrait — 每个角色段首的浮动半身像 */
+.eoove-content img.char-portrait {
+  float: right;
+  width: 38%;
+  max-width: 280px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  margin: 4px 0 18px 28px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow:
+    0 0 0 1px rgba(255,93,177,0.06),
+    0 12px 36px rgba(0,0,0,0.55),
+    0 4px 14px rgba(93,200,255,0.08);
+  background: rgba(13,15,20,0.6);
+}
+.eoove-content > p:has(> img.char-portrait) {
+  margin: 0;
+}
+@media (max-width: 720px) {
+  .eoove-content img.char-portrait {
+    float: none;
+    width: 70%;
+    max-width: 320px;
+    margin: 18px auto 22px;
+    display: block;
+  }
+}
+
 a {
   color: var(--accent-blue);
   text-decoration: none;
