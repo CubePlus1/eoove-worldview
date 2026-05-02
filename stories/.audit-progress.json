@@ -111,7 +111,8 @@
     {
       "id": "P2-17",
       "summary": "安渊保真度 91% B vs SY 24 复审升 A 补丁不一致",
-      "status": "pending"
+      "status": "done",
+      "completed_at": "2026-05-03"
     },
     {
       "id": "P2-18",
