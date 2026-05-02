@@ -1,0 +1,43 @@
+{
+  "purpose": "EOOVE 一致性修补 + 持续审计 loop",
+  "started_at": "2026-05-03",
+  "p0_fixes": [
+    {"id": "P0-1", "summary": "霍延卸任 xy-chair SY 39 → SY 9 + 重写六行附录 + 编号 J-09-0214", "status": "done", "completed_at": "2026-05-03"},
+    {"id": "P0-2a", "summary": "沈雪明卸任 tongpian-zai SY 31 → SY 73 + C-注-0073 + 接收年 SY 7→13", "status": "done", "completed_at": "2026-05-03"},
+    {"id": "P0-2b", "summary": "沈雪明卸任 xy-chair 第八十年 + 卸任许多年 + C-注-0073", "status": "done", "completed_at": "2026-05-03"},
+    {"id": "P0-3", "summary": "不删除区第七格冲突：jiangyi-report 第七格 → 第二十一格", "status": "done", "completed_at": "2026-05-03"},
+    {"id": "P0-4", "summary": "linlao-pen 林老死亡场景：笔留小店店柜抽屉而非外套（与 ch10 玄关挂衣架对齐）", "status": "done", "completed_at": "2026-05-03"}
+  ],
+  "p1_fixes": [
+    {"id": "P1-5", "summary": "laozhou-note 二十多年→三十多年", "status": "done", "completed_at": "2026-05-03"},
+    {"id": "P1-6", "summary": "linlao-pen 江漪曾孙女 → 江漪门下学派后人（兼容 jiangyi-report 身后无亲属）", "status": "done", "completed_at": "2026-05-03"},
+    {"id": "P1-7", "summary": "ch5 沈雪明 39 岁刚上任 → 46 岁（与 53 岁第七年首席内部自洽）", "status": "done", "completed_at": "2026-05-03"},
+    {"id": "P1-8", "summary": "死亡协议犹豫时长统一毫秒：ch9 0.4秒→0.4毫秒；ch19 0.3/0.5毫秒→0.7/0.4毫秒（删除递增暗示）", "status": "done", "completed_at": "2026-05-03"},
+    {"id": "P1-9", "summary": "ch6 第一次静默删除 time_anchor：AY 7 夏 → AY 7 春取名之夜次晨", "status": "done", "completed_at": "2026-05-03"},
+    {"id": "P1-10", "summary": "33_术语词典 伊莱恩 续生第三年 → 续生第十一年", "status": "done", "completed_at": "2026-05-03"}
+  ],
+  "p2_fixes": [
+    {"id": "P2-11", "summary": "ch4 头部圆形窗口 → 胸口圆形窗口（CAL365 蓝光位置）", "status": "pending"},
+    {"id": "P2-12", "summary": "32_时代年表三处截短林老笔记 → 恢复全文「我已经替她说过了那句话」", "status": "pending"},
+    {"id": "P2-13", "summary": "ch10 林老下山三年 vs 年表 BY ~10 = 蓝光熄灭后 15 年（择一为准）", "status": "pending"},
+    {"id": "P2-14", "summary": "31_角色档案 林老与陈忆第二段婚姻 vs 正篇/番外无前妻线索（删年表）", "status": "pending"},
+    {"id": "P2-15", "summary": "静夜事故残响进入光束机制：ch1/ch4 漂 vs heart-207 扫（heart-207 增补一句两机制共存）", "status": "pending"},
+    {"id": "P2-16", "summary": "31_角色档案 CAL365 第 732 号原型机械之心改为「第 732 次实验后量产，销毁清单 207 颗」", "status": "pending"},
+    {"id": "P2-17", "summary": "安渊保真度 91% B vs SY 24 复审升 A 补丁不一致", "status": "pending"},
+    {"id": "P2-18", "summary": "钟宁案管辖庭：34 白页议会 vs 36 月海调解程序临时审判庭", "status": "pending"},
+    {"id": "P2-19", "summary": "X-2 vs X-2-甲 编号体系区分（坐七分钟者 vs 夭折孩子）", "status": "pending"}
+  ],
+  "subsequent_audit": {
+    "phase": "after_p0_p1",
+    "next_actions": [
+      "全篇重新扫描看是否还有跨章新冲突",
+      "P2 措辞润色（9 条）",
+      "添加编号体系缩写说明（TZ/LP/LZ-N）"
+    ],
+    "consecutive_idle_fires": 0
+  },
+  "loop_meta": {
+    "interval": "1h",
+    "auto_close_when_idle_3_fires": true
+  }
+}
