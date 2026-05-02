@@ -225,9 +225,22 @@
   letter-spacing: .25em; color: var(--accent-pink);
   margin: 0;
 }
-.hub-card--amber .hub-card__num { color: #f4c45c; }
-.hub-card--blue  .hub-card__num { color: var(--accent-blue); }
-.hub-card--rose  .hub-card__num { color: var(--accent-pink); }
+.hub-card--amber  .hub-card__num { color: #f4c45c; }
+.hub-card--blue   .hub-card__num { color: var(--accent-blue); }
+.hub-card--rose   .hub-card__num { color: var(--accent-pink); }
+.hub-card--violet .hub-card__num { color: #c8a8ff; }
+.hub-card--violet:hover {
+  border-color: #c8a8ff;
+  box-shadow: 0 0 0 1px rgba(200,168,255,.25), 0 6px 24px rgba(200,168,255,.18);
+}
+
+/* 番外集 hero 调性 — 略带 violet rim */
+.start-hero--spinoff::after {
+  background:
+    linear-gradient(180deg, rgba(6,8,13,.30) 0%, rgba(6,8,13,.95) 100%),
+    radial-gradient(ellipse at 50% 100%, rgba(200,168,255,.15), transparent 60%);
+}
+.start-hero--spinoff .start-hero__kicker { color: #c8a8ff; }
 
 .hub-card__title {
   font-family: var(--font-serif);

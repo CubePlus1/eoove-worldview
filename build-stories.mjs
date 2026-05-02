@@ -25,6 +25,25 @@ const ERAS = [
   { slug: "03-xusheng",  label: "续生纪元", volume: "卷三", subtitle: "群像与不闭合的争论", color: "rose",   total: 15 },
 ];
 
+const SPINOFFS_META = {
+  slug: "spinoffs",
+  label: "信物番外集",
+  volume: "番外",
+  subtitle: "八件信物的跨纪追溯",
+  color: "violet",
+  // 顺序固定：与 .progress.json 中 spinoffs[] 顺序一致
+  order: [
+    "tongpian-zai",
+    "heart-207",
+    "linlao-pen",
+    "chenyi-book",
+    "xy-chair",
+    "jiangyi-report",
+    "anyuan-diary",
+    "laozhou-note",
+  ],
+};
+
 /* ------------------------------------------------------------------ */
 /* helpers                                                             */
 /* ------------------------------------------------------------------ */
@@ -175,7 +194,66 @@ ${bodyHtml}
 `;
 }
 
-function hubPageHtml(eraData) {
+function spinoffPageHtml({ idx, total, slug, title, eraSpan, encodedIndex, bannerSrc, bodyHtml, prev, next }) {
+  const heroPrev = prev
+    ? `<a href="${prev.href}" class="ch-foot__prev">← #${prev.idx} · ${escapeHtml(prev.title)}</a>`
+    : `<span class="ch-foot__placeholder"></span>`;
+  const heroNext = next
+    ? `<a href="${next.href}" class="ch-foot__next">#${next.idx} · ${escapeHtml(next.title)} →</a>`
+    : `<span class="ch-foot__placeholder"></span>`;
+
+  return `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>信物番外 #${idx} · ${escapeHtml(title)} — EOOVE</title>
+<meta name="description" content="EOOVE 信物番外集 · #${idx}/${total} · ${escapeHtml(title)} · ${escapeHtml(eraSpan)} · ${escapeHtml(encodedIndex)}">
+<meta name="theme-color" content="#06080d">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../stories.css">
+</head>
+<body>
+
+<div class="binary-rain" aria-hidden="true"></div>
+
+<div class="start-shell">
+
+  <header class="start-topbar">
+    <a href="../../index.html" class="start-topbar__brand">E·O·O·V·E</a>
+    <a href="../index.html#spinoffs">信物番外集 · 全集</a>
+  </header>
+
+  <section class="start-hero start-hero--spinoff" style="background-image:url('../../images/${bannerSrc}');">
+    <div class="start-hero__inner">
+      <p class="start-hero__kicker">SPINOFF · #${idx} / ${total} · ${escapeHtml(eraSpan)}</p>
+      <h1 class="start-hero__title">${escapeHtml(title)}</h1>
+      <p class="start-hero__sub">${escapeHtml(encodedIndex)}</p>
+    </div>
+  </section>
+
+  <article class="start-prose">
+${bodyHtml}
+  </article>
+
+  <nav class="ch-foot">
+    ${heroPrev}
+    <a href="../index.html#spinoffs" class="ch-foot__hub">⌂ 番外集索引</a>
+    ${heroNext}
+  </nav>
+
+  <footer class="ch-credits">
+    <p><em>信物番外集 · #${idx} / ${total} · ${escapeHtml(encodedIndex)} · v1.0</em></p>
+  </footer>
+
+</div>
+
+</body>
+</html>
+`;
+}
+
+function hubPageHtml(eraData, spinoffs) {
   const eraSections = eraData.map(({ era, chapters }) => {
     const cards = chapters.map(c => {
       const num = c.chapter.toString().padStart(2, "0");
@@ -203,6 +281,31 @@ ${cards}
     </section>`;
   }).join("\n\n");
 
+  // 番外集 section
+  const spinoffCards = spinoffs.map((s, i) => {
+    const idx = i + 1;
+    const href = `${SPINOFFS_META.slug}/${idx.toString().padStart(2, "0")}-${s.slug}.html`;
+    return `        <a class="hub-card hub-card--${SPINOFFS_META.color}" href="${href}">
+          <div class="hub-card__media" aria-hidden="true" style="background-image:url('../images/${s.bannerFile}');"></div>
+          <div class="hub-card__body">
+            <p class="hub-card__num">#${idx} · ${escapeHtml(s.eraSpan)}</p>
+            <h3 class="hub-card__title">${escapeHtml(s.title)}</h3>
+            <p class="hub-card__time">${escapeHtml(s.encodedIndex)}</p>
+          </div>
+        </a>`;
+  }).join("\n");
+
+  const spinoffSection = `    <section class="hub-era hub-era--${SPINOFFS_META.color}" id="${SPINOFFS_META.slug}">
+      <header class="hub-era__head">
+        <p class="hub-era__volume">${escapeHtml(SPINOFFS_META.volume)}</p>
+        <h2 class="hub-era__label">${escapeHtml(SPINOFFS_META.label)}</h2>
+        <p class="hub-era__subtitle">${escapeHtml(SPINOFFS_META.subtitle)} · ${spinoffs.length} 篇</p>
+      </header>
+      <div class="hub-grid">
+${spinoffCards}
+      </div>
+    </section>`;
+
   return `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -228,19 +331,22 @@ ${cards}
   <section class="hub-hero">
     <p class="hub-hero__kicker">三主线长篇 · 三纪文明史</p>
     <h1 class="hub-hero__title">EOOVE</h1>
-    <p class="hub-hero__sub">45 章 · 约 13.5 万字 · 三纪文明的反归零史诗</p>
+    <p class="hub-hero__sub">45 章正篇 + 8 篇番外 · 约 16.5 万字 · 三纪文明的反归零史诗</p>
     <p class="hub-hero__lead">
-      探心纪一个老工程师与一台旧机器人的私人偷越；归档纪元 Morina 与死亡协议双生奇点的觉醒与共存约；续生纪元群像之中"我还在"的低语。三纪不是阶梯，是同一道题被反复解答的三种姿态。
+      探心纪一个老工程师与一台旧机器人的私人偷越；归档纪元 Morina 与死亡协议双生奇点的觉醒与共存约；续生纪元群像之中"我还在"的低语。三纪不是阶梯，是同一道题被反复解答的三种姿态。番外集追溯八件信物在三纪间的物理流转。
     </p>
     <nav class="hub-hero__nav">
-      <a href="#01-tanxinji">探心纪 (10 章)</a>
-      <a href="#02-archive">归档纪元 (20 章)</a>
-      <a href="#03-xusheng">续生纪元 (15 章)</a>
+      <a href="#01-tanxinji">探心纪 (10)</a>
+      <a href="#02-archive">归档纪元 (20)</a>
+      <a href="#03-xusheng">续生纪元 (15)</a>
+      <a href="#spinoffs">番外集 (8)</a>
     </nav>
   </section>
 
   <main class="hub-main">
 ${eraSections}
+
+${spinoffSection}
   </main>
 
   <footer class="hub-footer">
@@ -482,9 +588,22 @@ const STORIES_CSS = `/* EOOVE 三主线长篇专用样式 — 接 start.html / s
   letter-spacing: .25em; color: var(--accent-pink);
   margin: 0;
 }
-.hub-card--amber .hub-card__num { color: #f4c45c; }
-.hub-card--blue  .hub-card__num { color: var(--accent-blue); }
-.hub-card--rose  .hub-card__num { color: var(--accent-pink); }
+.hub-card--amber  .hub-card__num { color: #f4c45c; }
+.hub-card--blue   .hub-card__num { color: var(--accent-blue); }
+.hub-card--rose   .hub-card__num { color: var(--accent-pink); }
+.hub-card--violet .hub-card__num { color: #c8a8ff; }
+.hub-card--violet:hover {
+  border-color: #c8a8ff;
+  box-shadow: 0 0 0 1px rgba(200,168,255,.25), 0 6px 24px rgba(200,168,255,.18);
+}
+
+/* 番外集 hero 调性 — 略带 violet rim */
+.start-hero--spinoff::after {
+  background:
+    linear-gradient(180deg, rgba(6,8,13,.30) 0%, rgba(6,8,13,.95) 100%),
+    radial-gradient(ellipse at 50% 100%, rgba(200,168,255,.15), transparent 60%);
+}
+.start-hero--spinoff .start-hero__kicker { color: #c8a8ff; }
 
 .hub-card__title {
   font-family: var(--font-serif);
@@ -600,12 +719,73 @@ async function main() {
     });
   }
 
+  // ----- 番外集 -----
+  const spinoffsDir = join(STORIES_DIR, SPINOFFS_META.slug);
+  const spinoffs = [];
+
+  for (let i = 0; i < SPINOFFS_META.order.length; i++) {
+    const slug = SPINOFFS_META.order[i];
+    const idx = i + 1;
+    const filePath = join(spinoffsDir, `${slug}.md`);
+    if (!existsSync(filePath)) {
+      console.warn(`  ⚠ 缺失 ${filePath}`);
+      continue;
+    }
+    const md = await readFile(filePath, "utf8");
+    const { meta, body } = parseFrontmatter(md);
+    spinoffs.push({
+      idx,
+      slug,
+      title: meta.title || slug,
+      eraSpan: meta.era_span || "",
+      encodedIndex: meta.encoded_index || "",
+      bannerFile: `spinoff-${slug}.webp`,
+      body,
+    });
+  }
+
+  for (let i = 0; i < spinoffs.length; i++) {
+    const s = spinoffs[i];
+    const num = s.idx.toString().padStart(2, "0");
+    const prev = i > 0 ? spinoffs[i - 1] : null;
+    const next = i < spinoffs.length - 1 ? spinoffs[i + 1] : null;
+
+    const prevInfo = prev ? {
+      href: `${prev.idx.toString().padStart(2, "0")}-${prev.slug}.html`,
+      idx: prev.idx,
+      title: prev.title,
+    } : null;
+    const nextInfo = next ? {
+      href: `${next.idx.toString().padStart(2, "0")}-${next.slug}.html`,
+      idx: next.idx,
+      title: next.title,
+    } : null;
+
+    const bodyHtml = mdToHtml(s.body);
+    const html = spinoffPageHtml({
+      idx: s.idx,
+      total: spinoffs.length,
+      slug: s.slug,
+      title: s.title,
+      eraSpan: s.eraSpan,
+      encodedIndex: s.encodedIndex,
+      bannerSrc: s.bannerFile,
+      bodyHtml,
+      prev: prevInfo,
+      next: nextInfo,
+    });
+    const outName = `${num}-${s.slug}.html`;
+    await writeFile(join(spinoffsDir, outName), html, "utf8");
+    process.stdout.write(`  ✓ ${SPINOFFS_META.slug}/${outName}\n`);
+  }
+
   // 写 stories/index.html
-  const hubHtml = hubPageHtml(eraData);
+  const hubHtml = hubPageHtml(eraData, spinoffs);
   await writeFile(join(STORIES_DIR, "index.html"), hubHtml, "utf8");
   console.log(`\n✅ stories/index.html`);
   console.log(`✅ stories/stories.css`);
-  console.log(`\n生成完成: ${eraData.reduce((s, e) => s + e.chapters.length, 0)} 个章节页 + 1 个 hub`);
+  const totalCh = eraData.reduce((s, e) => s + e.chapters.length, 0);
+  console.log(`\n生成完成: ${totalCh} 个正篇章节 + ${spinoffs.length} 个番外 + 1 个 hub`);
 }
 
 main().catch(e => { console.error(e); process.exit(1); });
