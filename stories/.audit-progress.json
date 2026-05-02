@@ -17,7 +17,7 @@
     {"id": "P1-10", "summary": "33_术语词典 伊莱恩 续生第三年 → 续生第十一年", "status": "done", "completed_at": "2026-05-03"}
   ],
   "p2_fixes": [
-    {"id": "P2-11", "summary": "ch4 头部圆形窗口 → 胸口圆形窗口（CAL365 蓝光位置）", "status": "pending"},
+    {"id": "P2-11", "summary": "ch4 头部圆形窗口 → 胸口圆形窗口（CAL365 蓝光位置）", "status": "done", "completed_at": "2026-05-03"},
     {"id": "P2-12", "summary": "32_时代年表三处截短林老笔记 → 恢复全文「我已经替她说过了那句话」", "status": "pending"},
     {"id": "P2-13", "summary": "ch10 林老下山三年 vs 年表 BY ~10 = 蓝光熄灭后 15 年（择一为准）", "status": "pending"},
     {"id": "P2-14", "summary": "31_角色档案 林老与陈忆第二段婚姻 vs 正篇/番外无前妻线索（删年表）", "status": "pending"},
