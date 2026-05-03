@@ -128,7 +128,7 @@
     }
   ],
   "subsequent_audit": {
-    "phase": "p5_added",
+    "phase": "p6_added",
     "next_actions": [
       "全篇重新扫描看是否还有跨章新冲突",
       "P2 措辞润色（9 条）",
@@ -136,11 +136,12 @@
     ],
     "consecutive_idle_fires": 0,
     "last_audit_at": "2026-05-03",
-    "rounds_completed": 3
+    "rounds_completed": 4
   },
   "loop_meta": {
     "interval": "1h",
-    "auto_close_when_idle_3_fires": true
+    "auto_close_when_idle_3_fires": true,
+    "cron_cancelled_by_user": "2026-05-03"
   },
   "p3_fixes": [
     {
@@ -216,6 +217,32 @@
     {
       "id": "P5-31",
       "summary": "ch1 沈雪明 SY 0 四十一岁→四十岁 + 五年后→六年后（line 52）+ 五年后→六年后（line 95）— 与 P4-25 SY 6 接任 + ch5 46 岁刚接任一致",
+      "status": "done",
+      "completed_at": "2026-05-03"
+    }
+  ],
+  "p6_fixes": [
+    {
+      "id": "P6-32",
+      "summary": "reverse P5-31 partial：ch1 SY 0 四十岁→四十一岁（保留六年后），同步 ch5 四十六岁→四十七岁，消除 ch3/ch4/ch5 SY 6/8/12 = 47/49/53 链路的 +1 偏移",
+      "status": "done",
+      "completed_at": "2026-05-03"
+    },
+    {
+      "id": "P6-33",
+      "summary": "ch11 line 118 沈雪明 SY 38 准备卸任前文件 — 删去「卸任前的」（沈雪明 SY 73 才卸任，距 SY 38 还有 35 年）",
+      "status": "done",
+      "completed_at": "2026-05-03"
+    },
+    {
+      "id": "P6-34",
+      "summary": "35_VOC-0079 沈雪明原人 AY 18 离世 vs ch1 SY 0 沈雪明 41 岁活着出席 — 改原人离世为 SY 73 卸任后入续生者档（与 31_角色档案「续生者出身（续生入档 SY 5）百岁仍精神矍铄」对齐需重新定向）",
+      "status": "done",
+      "completed_at": "2026-05-03"
+    },
+    {
+      "id": "P6-35",
+      "summary": "ch7 line 58 沈雪明 SY 19 = 58 岁（应 60 岁线性外推或保留为续生者老化）— 评估保留",
       "status": "done",
       "completed_at": "2026-05-03"
     }
