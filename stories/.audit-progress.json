@@ -215,8 +215,9 @@
     },
     {
       "id": "P5-31",
-      "summary": "ch1 沈雪明接任 line 52「再过五年」+ line 95「五年后」未同步 P4-25 SY 6 接任 — 改为「六年后」共 2 处",
-      "status": "pending"
+      "summary": "ch1 沈雪明 SY 0 四十一岁→四十岁 + 五年后→六年后（line 52）+ 五年后→六年后（line 95）— 与 P4-25 SY 6 接任 + ch5 46 岁刚接任一致",
+      "status": "done",
+      "completed_at": "2026-05-03"
     }
   ]
 }
