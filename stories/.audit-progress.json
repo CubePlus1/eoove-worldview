@@ -128,7 +128,7 @@
     }
   ],
   "subsequent_audit": {
-    "phase": "p13_done_final_check",
+    "phase": "p14_done",
     "next_actions": [
       "全篇重新扫描看是否还有跨章新冲突",
       "P2 措辞润色（9 条）",
@@ -136,7 +136,7 @@
     ],
     "consecutive_idle_fires": 0,
     "last_audit_at": "2026-05-03",
-    "rounds_completed": 13,
+    "rounds_completed": 14,
     "last_finding": "1 found - A-1 cross-ref note"
   },
   "loop_meta": {
@@ -342,6 +342,14 @@
     {
       "id": "P13-49",
       "summary": "33_术语词典 + 设定集 L7428 机械之心定义末句「全数销毁」→「批量销毁（仅第 207 颗与 1 份设计原图存世）」（与 ch5 销毁车间 + heart-207 番外 + 11+ 处批量销毁措辞统一）",
+      "status": "done",
+      "completed_at": "2026-05-03"
+    }
+  ],
+  "p14_fixes": [
+    {
+      "id": "P14-50",
+      "summary": "33_术语词典 + 设定集 机械之心定义 refine：仅 207 颗完整可运行载体存世（藏 CAL365）+ 1 份设计原图，其余以海底/废墟残骸形式零星留存（兼容 04/07/27/18/22 残骸经济叙事）",
       "status": "done",
       "completed_at": "2026-05-03"
     }
