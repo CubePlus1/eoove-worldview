@@ -128,7 +128,7 @@
     }
   ],
   "subsequent_audit": {
-    "phase": "p10_done",
+    "phase": "p11_done",
     "next_actions": [
       "全篇重新扫描看是否还有跨章新冲突",
       "P2 措辞润色（9 条）",
@@ -136,7 +136,7 @@
     ],
     "consecutive_idle_fires": 0,
     "last_audit_at": "2026-05-03",
-    "rounds_completed": 9,
+    "rounds_completed": 11,
     "last_finding": "1 found - A-1 cross-ref note"
   },
   "loop_meta": {
@@ -306,6 +306,20 @@
     {
       "id": "P10-44",
       "summary": "36_WPA L141 加注脚指向 31_角色档案 双序列说明",
+      "status": "done",
+      "completed_at": "2026-05-03"
+    }
+  ],
+  "p11_fixes": [
+    {
+      "id": "P11-45",
+      "summary": "00_序章 白页天使「3 组件」→「4 组件」补判决窗（与全文 36/03-xusheng/04 一致）",
+      "status": "done",
+      "completed_at": "2026-05-03"
+    },
+    {
+      "id": "P11-46",
+      "summary": "ch6 CAL365 0001 原型机服役 AY 6-12 → BY ~28 至 BY ~25（注归档纪元后期编号系统追认 + 对应探心纪末，与年表 BY ~25 林老钟楼一致）",
       "status": "done",
       "completed_at": "2026-05-03"
     }
