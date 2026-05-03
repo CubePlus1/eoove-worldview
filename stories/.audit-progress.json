@@ -128,16 +128,16 @@
     }
   ],
   "subsequent_audit": {
-    "phase": "p16_done",
+    "phase": "converged",
     "next_actions": [
       "全篇重新扫描看是否还有跨章新冲突",
       "P2 措辞润色（9 条）",
       "添加编号体系缩写说明（TZ/LP/LZ-N）"
     ],
-    "consecutive_idle_fires": 0,
+    "consecutive_idle_fires": 1,
     "last_audit_at": "2026-05-03",
-    "rounds_completed": 16,
-    "last_finding": "1 found - A-1 cross-ref note"
+    "rounds_completed": 17,
+    "last_finding": "clean — corpus converged"
   },
   "loop_meta": {
     "interval": "1h",
