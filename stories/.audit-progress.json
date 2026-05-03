@@ -128,7 +128,7 @@
     }
   ],
   "subsequent_audit": {
-    "phase": "p3_added",
+    "phase": "p4_added",
     "next_actions": [
       "全篇重新扫描看是否还有跨章新冲突",
       "P2 措辞润色（9 条）",
@@ -136,7 +136,7 @@
     ],
     "consecutive_idle_fires": 0,
     "last_audit_at": "2026-05-03",
-    "rounds_completed": 1
+    "rounds_completed": 2
   },
   "loop_meta": {
     "interval": "1h",
@@ -172,6 +172,23 @@
       "summary": "ch10 末段缺加密退休档案 / 单行笔记的物证起点（32_年表已注但 ch10 未引）— 补一行物证起点",
       "status": "done",
       "completed_at": "2026-05-03"
+    }
+  ],
+  "p4_fixes": [
+    {
+      "id": "P4-25",
+      "summary": "沈雪明任期起点 SY 12 → SY 6（依 ch5 SY 12=第七年首席+46岁刚被推 baseline）：31_角色档案 + ch12 line 18 + 36_WPA-0089 任期 26 → 67 年",
+      "status": "pending"
+    },
+    {
+      "id": "P4-26",
+      "summary": "P3-20 残余 4 处「SY 9 年卸任」→ SY 39：ch12.md line 53-54 + ch09 line 84 (核 context) + outlines/03-xusheng-outline.md 2 处",
+      "status": "pending"
+    },
+    {
+      "id": "P4-27",
+      "summary": "36_WPA-0061 line 185「SY 70 年退职演说」→「SY 73 年卸任前演说」（与 ch15 锚点一致）",
+      "status": "pending"
     }
   ]
 }
