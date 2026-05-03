@@ -128,7 +128,7 @@
     }
   ],
   "subsequent_audit": {
-    "phase": "p6_added",
+    "phase": "p7_added",
     "next_actions": [
       "全篇重新扫描看是否还有跨章新冲突",
       "P2 措辞润色（9 条）",
@@ -136,7 +136,7 @@
     ],
     "consecutive_idle_fires": 0,
     "last_audit_at": "2026-05-03",
-    "rounds_completed": 4
+    "rounds_completed": 5
   },
   "loop_meta": {
     "interval": "1h",
@@ -243,6 +243,20 @@
     {
       "id": "P6-35",
       "summary": "ch7 line 58 沈雪明 SY 19 = 58 岁（应 60 岁线性外推或保留为续生者老化）— 评估保留",
+      "status": "done",
+      "completed_at": "2026-05-03"
+    }
+  ],
+  "p7_fixes": [
+    {
+      "id": "P7-36",
+      "summary": "revert P6-35：ch7 SY 19 = 60 → 58 岁（恢复续生者-邻接慢速老化曲线 SY 12=53 → SY 19=58 → SY 20=59 → SY 50=81 → SY 60=88 → SY 73=89）",
+      "status": "done",
+      "completed_at": "2026-05-03"
+    },
+    {
+      "id": "P7-37",
+      "summary": "ch8 line 130 霍延 SY 21「已经卸任」→「仍在任，但已经在写判例集底稿」（霍延 SY 39 才卸任，与 31_角色档案 + ch12 一致）",
       "status": "done",
       "completed_at": "2026-05-03"
     }
