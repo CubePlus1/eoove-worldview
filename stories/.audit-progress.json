@@ -123,7 +123,8 @@
     {
       "id": "P2-19",
       "summary": "X-2 vs X-2-甲 编号体系区分（坐七分钟者 vs 夭折孩子）",
-      "status": "pending"
+      "status": "done",
+      "completed_at": "2026-05-03"
     }
   ],
   "subsequent_audit": {
