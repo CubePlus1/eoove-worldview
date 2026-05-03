@@ -204,7 +204,8 @@
     {
       "id": "P5-29",
       "summary": "ch12 line 88 卫淳 SY 65 = 五十六岁 vs ch15 SY 80 = 五十九岁（15 年差对应 3 岁差不可解）— 改 ch12 「五十六」→「四十四」（与 ch15 SY 73 接首席年龄 52 链路一致）",
-      "status": "pending"
+      "status": "done",
+      "completed_at": "2026-05-03"
     },
     {
       "id": "P5-30",
