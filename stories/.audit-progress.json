@@ -128,7 +128,7 @@
     }
   ],
   "subsequent_audit": {
-    "phase": "p4_added",
+    "phase": "p5_added",
     "next_actions": [
       "全篇重新扫描看是否还有跨章新冲突",
       "P2 措辞润色（9 条）",
@@ -136,7 +136,7 @@
     ],
     "consecutive_idle_fires": 0,
     "last_audit_at": "2026-05-03",
-    "rounds_completed": 2
+    "rounds_completed": 3
   },
   "loop_meta": {
     "interval": "1h",
@@ -192,6 +192,28 @@
       "summary": "36_WPA-0061 line 185「SY 70 年退职演说」→「SY 73 年卸任前演说」（与 ch15 锚点一致）",
       "status": "done",
       "completed_at": "2026-05-03"
+    }
+  ],
+  "p5_fixes": [
+    {
+      "id": "P5-28",
+      "summary": "ch13 沈雪明 SY 73 = 97 岁 vs ch14 同一 X-2 案听证 89 岁 — 改 ch13 line 80 「九十七岁」→「八十九岁」（reverse P3-21，以 ch14 为准）+ outline ch13 同步",
+      "status": "pending"
+    },
+    {
+      "id": "P5-29",
+      "summary": "ch12 line 88 卫淳 SY 65 = 五十六岁 vs ch15 SY 80 = 五十九岁（15 年差对应 3 岁差不可解）— 改 ch12 「五十六」→「四十四」（与 ch15 SY 73 接首席年龄 52 链路一致）",
+      "status": "pending"
+    },
+    {
+      "id": "P5-30",
+      "summary": "卫淳代词跨章不一致：ch08/12/13/14 用「他」vs ch15 用「她」共 6 处 — 统一为「他」（ch15 改 6 处「她」→「他」）",
+      "status": "pending"
+    },
+    {
+      "id": "P5-31",
+      "summary": "ch1 沈雪明接任 line 52「再过五年」+ line 95「五年后」未同步 P4-25 SY 6 接任 — 改为「六年后」共 2 处",
+      "status": "pending"
     }
   ]
 }
