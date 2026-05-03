@@ -128,7 +128,7 @@
     }
   ],
   "subsequent_audit": {
-    "phase": "p12_done",
+    "phase": "p13_done_final_check",
     "next_actions": [
       "全篇重新扫描看是否还有跨章新冲突",
       "P2 措辞润色（9 条）",
@@ -136,7 +136,7 @@
     ],
     "consecutive_idle_fires": 0,
     "last_audit_at": "2026-05-03",
-    "rounds_completed": 12,
+    "rounds_completed": 13,
     "last_finding": "1 found - A-1 cross-ref note"
   },
   "loop_meta": {
@@ -334,6 +334,14 @@
     {
       "id": "P12-48",
       "summary": "设定集 L6489 + 35_VOC-0036 line 143 + 设定集 L8674 第 732 号原型 → 第 732 次实验后量产+销毁清单 207 颗（镜像同步 P2-16，3 处统一）",
+      "status": "done",
+      "completed_at": "2026-05-03"
+    }
+  ],
+  "p13_fixes": [
+    {
+      "id": "P13-49",
+      "summary": "33_术语词典 + 设定集 L7428 机械之心定义末句「全数销毁」→「批量销毁（仅第 207 颗与 1 份设计原图存世）」（与 ch5 销毁车间 + heart-207 番外 + 11+ 处批量销毁措辞统一）",
       "status": "done",
       "completed_at": "2026-05-03"
     }
