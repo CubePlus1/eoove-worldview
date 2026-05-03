@@ -164,7 +164,8 @@
     {
       "id": "P3-23",
       "summary": "ch12 line 18 续生人口 SY 12 = 二成 vs 32_时代年表 SY 30 = 20% — 改为与年表对齐",
-      "status": "pending"
+      "status": "done",
+      "completed_at": "2026-05-03"
     },
     {
       "id": "P3-24",
