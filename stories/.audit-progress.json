@@ -128,7 +128,7 @@
     }
   ],
   "subsequent_audit": {
-    "phase": "p9_added_then_done",
+    "phase": "p10_done",
     "next_actions": [
       "全篇重新扫描看是否还有跨章新冲突",
       "P2 措辞润色（9 条）",
@@ -136,7 +136,7 @@
     ],
     "consecutive_idle_fires": 0,
     "last_audit_at": "2026-05-03",
-    "rounds_completed": 8,
+    "rounds_completed": 9,
     "last_finding": "1 found - A-1 cross-ref note"
   },
   "loop_meta": {
@@ -280,6 +280,32 @@
     {
       "id": "P9-40",
       "summary": "31_角色档案 死亡协议「三次近乎犹豫」清单加入交叉互注：叙事性序列（静夜/王座/慢明附录）vs 数值化序列（静夜 0.7ms/归零潮 0.4ms/全域静默 0.7ms），明示两套序列在不同维度记录、互不取代",
+      "status": "done",
+      "completed_at": "2026-05-03"
+    }
+  ],
+  "p10_fixes": [
+    {
+      "id": "P10-41",
+      "summary": "设定集 SY 70 → SY 71（X-2-甲夭折年份），3 处统一",
+      "status": "done",
+      "completed_at": "2026-05-03"
+    },
+    {
+      "id": "P10-42",
+      "summary": "设定集 沈雪明 SY 70 退职演说 → SY 73 卸任前演说",
+      "status": "done",
+      "completed_at": "2026-05-03"
+    },
+    {
+      "id": "P10-43",
+      "summary": "02-archive-outline.md L158 0.4 秒 → 0.4 毫秒（与 ch9 修补对齐）",
+      "status": "done",
+      "completed_at": "2026-05-03"
+    },
+    {
+      "id": "P10-44",
+      "summary": "36_WPA L141 加注脚指向 31_角色档案 双序列说明",
       "status": "done",
       "completed_at": "2026-05-03"
     }
