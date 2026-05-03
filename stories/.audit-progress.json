@@ -128,16 +128,45 @@
     }
   ],
   "subsequent_audit": {
-    "phase": "after_p0_p1",
+    "phase": "p3_added",
     "next_actions": [
       "全篇重新扫描看是否还有跨章新冲突",
       "P2 措辞润色（9 条）",
       "添加编号体系缩写说明（TZ/LP/LZ-N）"
     ],
-    "consecutive_idle_fires": 0
+    "consecutive_idle_fires": 0,
+    "last_audit_at": "2026-05-03",
+    "rounds_completed": 1
   },
   "loop_meta": {
     "interval": "1h",
     "auto_close_when_idle_3_fires": true
-  }
+  },
+  "p3_fixes": [
+    {
+      "id": "P3-20",
+      "summary": "霍延 SY 9 卸任修补遗漏：34_案件3/案件6 + ch6_CAL365觉醒 + ch10_莫云残响 + 35_VOC-0062 仍写霍延为在任主审，应改为继任者或霍延月海小屋回顾",
+      "status": "pending"
+    },
+    {
+      "id": "P3-21",
+      "summary": "沈雪明年龄撕裂：ch12 SY50=81岁 / ch13 SY73=87岁 与 ch5/ch4/ch8 基准线（SY 12=53岁 → SY 73 应≈114岁）打架，需校准下游年龄",
+      "status": "pending"
+    },
+    {
+      "id": "P3-22",
+      "summary": "X-2-甲夭折年份 SY 70（31/34）vs SY 71（ch13）— 以 ch13 为准",
+      "status": "pending"
+    },
+    {
+      "id": "P3-23",
+      "summary": "ch12 line 18 续生人口 SY 12 = 二成 vs 32_时代年表 SY 30 = 20% — 改为与年表对齐",
+      "status": "pending"
+    },
+    {
+      "id": "P3-24",
+      "summary": "ch10 末段缺加密退休档案 / 单行笔记的物证起点（32_年表已注但 ch10 未引）— 补一行物证起点",
+      "status": "pending"
+    }
+  ]
 }
