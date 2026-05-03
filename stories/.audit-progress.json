@@ -145,8 +145,9 @@
   "p3_fixes": [
     {
       "id": "P3-20",
-      "summary": "霍延 SY 9 卸任修补遗漏：34_案件3/案件6 + ch6_CAL365觉醒 + ch10_莫云残响 + 35_VOC-0062 仍写霍延为在任主审，应改为继任者或霍延月海小屋回顾",
-      "status": "pending"
+      "summary": "霍延卸任年份统一为 SY 39（revert P0-1）：31_角色档案/34_案件7/xy-chair/36_WPA-0001/35_VOC-0048 全部对齐文学锚点（ch6 SY 14、ch10 SY 35、VOC-0062 SY 35）",
+      "status": "done",
+      "completed_at": "2026-05-03"
     },
     {
       "id": "P3-21",
