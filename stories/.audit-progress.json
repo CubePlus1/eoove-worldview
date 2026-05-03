@@ -190,7 +190,8 @@
     {
       "id": "P4-27",
       "summary": "36_WPA-0061 line 185「SY 70 年退职演说」→「SY 73 年卸任前演说」（与 ch15 锚点一致）",
-      "status": "pending"
+      "status": "done",
+      "completed_at": "2026-05-03"
     }
   ]
 }
