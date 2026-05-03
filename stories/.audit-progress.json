@@ -128,7 +128,7 @@
     }
   ],
   "subsequent_audit": {
-    "phase": "p7_added",
+    "phase": "p8_added",
     "next_actions": [
       "全篇重新扫描看是否还有跨章新冲突",
       "P2 措辞润色（9 条）",
@@ -136,7 +136,7 @@
     ],
     "consecutive_idle_fires": 0,
     "last_audit_at": "2026-05-03",
-    "rounds_completed": 5
+    "rounds_completed": 6
   },
   "loop_meta": {
     "interval": "1h",
@@ -257,6 +257,20 @@
     {
       "id": "P7-37",
       "summary": "ch8 line 130 霍延 SY 21「已经卸任」→「仍在任，但已经在写判例集底稿」（霍延 SY 39 才卸任，与 31_角色档案 + ch12 一致）",
+      "status": "done",
+      "completed_at": "2026-05-03"
+    }
+  ],
+  "p8_fixes": [
+    {
+      "id": "P8-38",
+      "summary": "ch7 line 26 霍延 SY 19 = 六十一岁 → 六十八岁（与 ch6 SY 14 = 六十三岁线性 +5 自洽）",
+      "status": "done",
+      "completed_at": "2026-05-03"
+    },
+    {
+      "id": "P8-39",
+      "summary": "31_角色档案 + 35_VOC-0079 元数据增补「邻接 Morina/守名者权限场域 + 念名日声纹日常导致老化非线性延缓」机制说明，明示 73 年仅老 48 岁的设定锚点",
       "status": "done",
       "completed_at": "2026-05-03"
     }
