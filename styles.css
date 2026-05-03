@@ -1235,6 +1235,177 @@ blockquote strong {
   letter-spacing: .04em;
 }
 
+/* ===========================================
+   Reading Paths (#paths) — 推荐阅读路径
+   =========================================== */
+.paths-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 36px;
+}
+
+.path-card {
+  position: relative;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(20, 24, 36, 0.55), rgba(13, 15, 20, 0.7));
+  padding: 26px 28px 28px;
+  border-radius: 4px;
+  transition: border-color .25s ease, transform .25s ease;
+}
+
+.path-card:hover {
+  border-color: rgba(135, 206, 255, 0.45);
+  transform: translateY(-2px);
+}
+
+.path-card--primary {
+  border-color: rgba(255, 199, 230, 0.45);
+  background:
+    linear-gradient(180deg, rgba(40, 26, 38, 0.55), rgba(13, 15, 20, 0.7)),
+    radial-gradient(circle at 100% 0%, rgba(255, 199, 230, 0.12), transparent 60%);
+}
+
+.path-card--primary:hover {
+  border-color: rgba(255, 199, 230, 0.7);
+}
+
+.path-card__head {
+  margin-bottom: 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+.path-card__tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .25em;
+  color: var(--accent-blue);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.path-card--primary .path-card__tag {
+  color: #ffc7e6;
+}
+
+.path-card__title {
+  font-family: var(--font-serif, "Source Han Serif SC", "Noto Serif SC", serif);
+  font-size: 22px;
+  margin: 0 0 10px;
+  color: var(--fg-primary);
+  letter-spacing: .02em;
+}
+
+.path-card__why {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--fg-secondary);
+}
+
+.path-card__steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: step;
+}
+
+.path-card__steps li {
+  position: relative;
+  padding: 10px 0 10px 38px;
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--fg-primary);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.06);
+  counter-increment: step;
+}
+
+.path-card__steps li:last-child {
+  border-bottom: none;
+}
+
+.path-card__steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: rgba(13, 15, 20, 0.8);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--accent-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0;
+}
+
+.path-card--primary .path-card__steps li::before {
+  border-color: rgba(255, 199, 230, 0.5);
+  color: #ffc7e6;
+}
+
+.path-card__steps a {
+  color: var(--fg-primary);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(135, 206, 255, 0.35);
+  transition: color .2s ease, border-color .2s ease;
+}
+
+.path-card__steps a:hover {
+  color: var(--accent-blue);
+  border-bottom-color: var(--accent-blue);
+}
+
+.path-card__meta {
+  display: inline-block;
+  margin-left: 8px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--fg-tertiary, var(--fg-secondary));
+  letter-spacing: .04em;
+  opacity: .7;
+}
+
+.paths-foot {
+  margin-top: 32px;
+  padding: 20px 26px;
+  border-left: 2px solid rgba(200, 168, 255, 0.45);
+  background: rgba(200, 168, 255, 0.04);
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--fg-secondary);
+}
+
+.paths-foot a {
+  color: #c8a8ff;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(200, 168, 255, 0.45);
+}
+
+.paths-foot a:hover {
+  color: #e0caff;
+  border-bottom-style: solid;
+}
+
+@media (max-width: 880px) {
+  .paths-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .path-card {
+    padding: 22px 22px 24px;
+  }
+  .path-card__title {
+    font-size: 20px;
+  }
+}
+
 .appendix-divider {
   display: flex;
   align-items: center;
