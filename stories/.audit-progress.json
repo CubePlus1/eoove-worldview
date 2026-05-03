@@ -183,8 +183,9 @@
     },
     {
       "id": "P4-26",
-      "summary": "P3-20 残余 4 处「SY 9 年卸任」→ SY 39：ch12.md line 53-54 + ch09 line 84 (核 context) + outlines/03-xusheng-outline.md 2 处",
-      "status": "pending"
+      "summary": "P3-20 残余 SY 9 → SY 39：ch12 line 54（霍延小屋择地）+ outlines/03-xusheng-outline ch12 梗概；ch09 line 84 SY 9 与卸任无关（安渊原配 sighting），保留",
+      "status": "done",
+      "completed_at": "2026-05-03"
     },
     {
       "id": "P4-27",
