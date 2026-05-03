@@ -128,15 +128,16 @@
     }
   ],
   "subsequent_audit": {
-    "phase": "p8_added",
+    "phase": "round_7_clean",
     "next_actions": [
       "全篇重新扫描看是否还有跨章新冲突",
       "P2 措辞润色（9 条）",
       "添加编号体系缩写说明（TZ/LP/LZ-N）"
     ],
-    "consecutive_idle_fires": 0,
+    "consecutive_idle_fires": 1,
     "last_audit_at": "2026-05-03",
-    "rounds_completed": 6
+    "rounds_completed": 7,
+    "last_finding": "clean — 0 new findings"
   },
   "loop_meta": {
     "interval": "1h",
