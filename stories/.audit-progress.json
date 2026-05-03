@@ -158,7 +158,8 @@
     {
       "id": "P3-22",
       "summary": "X-2-甲夭折年份 SY 70（31/34）vs SY 71（ch13）— 以 ch13 为准",
-      "status": "pending"
+      "status": "done",
+      "completed_at": "2026-05-03"
     },
     {
       "id": "P3-23",
