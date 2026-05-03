@@ -128,7 +128,7 @@
     }
   ],
   "subsequent_audit": {
-    "phase": "p15_done",
+    "phase": "p16_done",
     "next_actions": [
       "全篇重新扫描看是否还有跨章新冲突",
       "P2 措辞润色（9 条）",
@@ -136,7 +136,7 @@
     ],
     "consecutive_idle_fires": 0,
     "last_audit_at": "2026-05-03",
-    "rounds_completed": 15,
+    "rounds_completed": 16,
     "last_finding": "1 found - A-1 cross-ref note"
   },
   "loop_meta": {
@@ -370,6 +370,14 @@
     {
       "id": "P15-53",
       "summary": "设定集 L3720 出土时间「续生纪元第二年」→「归档纪元中期」（与 00_衔接 / 31 / 4453 一致）",
+      "status": "done",
+      "completed_at": "2026-05-03"
+    }
+  ],
+  "p16_fixes": [
+    {
+      "id": "P16-54",
+      "summary": "heart-207 番外 line 127 归档纪元后期→中期（与 00/31/设定集 出土时间一致）+ line 111 归档纪元中期→初年中段（避免中期内 状态自冲突）",
       "status": "done",
       "completed_at": "2026-05-03"
     }
